@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <link rel="stylesheet" href="WebTech-Class-HW/Css/Q1SEU.css">
+        <title>Web Technologies HomeWork</title>
+    </Head>
+    <body>
+        <div class="Main-Container">
+                <h2 class="one">Course Regestration Page</h2>
+                <div class="imagee">
+                    <img src="WebTech-Class-HW/Css/SEU-logo.jpg" alt="Saudi University Logo">
+                </div>
+                <div class="two">
+                    <h1>Welcome To Course Regestration Page</h1>
+                    <p>Before filling out the course regestration form, please read the following instruction</p>
+                    <ul>
+                        <li>Visit SEU page and check the course code.<a href="https://seu.edu.sa/">Go To SEU Web Page</a></li>
+                        <li>Make sure that you have filled out all the required information correctly.</li>
+                    </ul>
+                    <h1>Corse Regestration Form</h1>
+                </div>
+                <div class="three">
+                    <label for="studentname">Student Name:</label>
+                    <input type="text" id="studentname" name="studentname", required>
+                    <label for="studentid">Student ID:</label>
+                    <input type="number" id="studentid" name="studentid" size="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                    <label for="coursecode">Course Code:</label>
+                    <input type="text" id="coursecode" name="coursecode", required>
+                    <label for="email">E-mail Address:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="level">Please Select Your Level:</label>
+                    <input list="levellist" id="level" name="level" required>
+                        <datalist id="levellist">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                        </datalist>
+                    <form action="">
+                        <p>Is it required or elective course?</p>
+                        <label for="elective">Elective</label>
+                        <input type="radio" name="pick" id="elective" value="elective">
+                        <label for="required">Required</label>
+                        <input type="radio" name="pick" id="required" value="required">
+                    </form>
+                    <div class="button">
+                        <button>Submit</button>
+                        <button>Clear</button>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
