@@ -1,0 +1,38 @@
+.Main-Container{
+    display: grid;
+    grid-template-rows: 100px, 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color:ivory;
+    grid-template-areas:
+    "one"
+    "image"
+    "two"
+    "three";
+    }
+    .one{
+        grid-area: one;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+    }
+    .imagee{
+        display: flex;
+        height: 80px;
+        grid-area: image;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin: 4px;
+        gap: 10px;
+    }
