@@ -12,24 +12,24 @@
     "two"
     "three";
     }
-    .one{
+.one{
         grid-area: one;
     }
-    .two{
+.two{
         grid-area: two;
     }
-    .three{
+.three{
         grid-area: three;
         display: flex;
         flex-direction: column;
         align-items:baseline;
     }
-    .imagee{
+.imagee{
         display: flex;
         height: 80px;
         grid-area: image;
     }
-    .button{
+.button{
         display: flex;
         flex-direction: row;
         padding: 5px;
